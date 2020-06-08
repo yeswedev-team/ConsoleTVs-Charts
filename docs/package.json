@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "vuepress dev",
-    "build": "vuepress build"
+    "build": "vuepress build --no-cache --dest ./.vuepress/dist"
   },
   "devDependencies": {
     "vuepress": "^1.5.0"
