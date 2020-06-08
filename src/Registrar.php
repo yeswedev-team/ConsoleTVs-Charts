@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace ConsoleTVs\Charts;
 
@@ -8,7 +8,6 @@ use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Routing\Registrar as RouteRegistrar;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Chartisan\PHP\Chartisan;
 use Illuminate\Support\Str;
 
 class Registrar
