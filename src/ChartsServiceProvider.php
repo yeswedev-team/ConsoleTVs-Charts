@@ -32,7 +32,7 @@ class ChartsServiceProvider extends ServiceProvider
     public function boot(Repository $config, Registrar $charts): void
     {
         // Publish the configuration file to the config path.
-        $this->publishes([__DIR__.'/Config/charts.php' => config_path('charts.php')]);
+        $this->publishes([__DIR__.'/Config/charts.php' => config_path('charts.php')], 'charts');
         // Create the blade directrives
         $routeNamePrefix = $config->get('charts.global_route_name_prefix');
         Blade::directive('chart', function ($expression) use ($routeNamePrefix) {
