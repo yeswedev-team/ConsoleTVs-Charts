@@ -60,7 +60,7 @@ class Registrar
             // Create the chart instance.
             $instance = new $chartClass();
             // Get the name of the chart by using the instance name or the class name.
-            $name = $instance->name ?? Str::of($chartClass)->basename()->snake();
+            $name = $instance->name ?? Str::snake(class_basename($chartClass));
             // Clean the prefix and transform it into an array for concatenation.
             $prefixArray = Str::of($instance->prefix ?? '')->explode('/')->filter()->values();
             // Define the route name for the given chart.
